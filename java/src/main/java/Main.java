@@ -1,13 +1,13 @@
-
-import com.mashape.unirest.http.HttpResponse;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
 import org.sql2o.Sql2o;
 
 import java.net.MalformedURLException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import static spark.Spark.*;
+
+import static spark.Spark.awaitInitialization;
 import static spark.Spark.get;
+import static spark.Spark.port;
 
 
 public class Main {
