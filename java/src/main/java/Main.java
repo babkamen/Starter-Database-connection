@@ -26,7 +26,7 @@ public class Main {
         ConnectionDetails connection = new ConnectionDetails(connURL);
         System.out.println("Connection details="+connection.toString());
 
-        Sql2o sql2o = new Sql2o(connection.getUrl());
+        Sql2o sql2o = new Sql2o(connection.getUrl(),"","");
 
         Sql2oModel model = new Sql2oModel(sql2o);
 
