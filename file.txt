@@ -1,0 +1,16 @@
+/home/ubuntu/.nvm/versions/node/v4.4.5/bin/restcoder -> /home/ubuntu/.nvm/versions/node/v4.4.5/lib/node_modules/restcoder-cli/bin/restcoder
+restcoder-cli@1.0.2 /home/ubuntu/.nvm/versions/node/v4.4.5/lib/node_modules/restcoder-cli
+├── ini@1.3.4
+├── ignore@2.2.19
+├── co@4.6.0
+├── underscore@1.8.3
+├── superagent-promise@1.1.0
+├── adm-zip@0.4.7
+├── commander@2.9.0 (graceful-readlink@1.0.1)
+├── node-status@0.1.7 (charm@0.2.1, colors@1.1.2)
+├── mkdirp@0.5.1 (minimist@0.0.8)
+├── superagent@1.8.3 (component-emitter@1.2.1, methods@1.1.2, cookiejar@2.0.6, reduce-component@1.0.1, extend@3.0.0, mime@1.3.4, formidable@1.0.17, qs@2.3.3, debug@2.2.0, readable-stream@1.0.27-1, form-data@1.0.0-rc3)
+├── socket.io-client@1.4.6 (to-array@0.1.4, component-emitter@1.2.0, indexof@0.0.1, object-component@0.0.3, component-bind@1.0.0, backo2@1.0.2, has-binary@0.1.7, debug@2.2.0, socket.io-parser@2.2.6, parseuri@0.0.4, engine.io-client@1.6.9)
+├── update-notifier@0.6.3 (is-npm@1.0.0, chalk@1.1.3, semver-diff@2.1.0, configstore@2.0.0, boxen@0.3.1, latest-version@2.0.0)
+├── prompt@0.2.14 (revalidator@0.1.8, pkginfo@0.4.0, read@1.0.7, winston@0.8.3, utile@0.2.1)
+└── inquirer@0.11.4 (ansi-regex@2.0.0, strip-ansi@3.0.1, ansi-escapes@1.4.0, rx-lite@3.1.2, through@2.3.8, cli-width@1.1.1, chalk@1.1.3, figures@1.7.0, readline2@1.0.1, string-width@1.0.1, cli-cursor@1.0.2, run-async@0.1.0, lodash@3.10.1)

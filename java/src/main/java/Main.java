@@ -2,25 +2,23 @@
 import org.sql2o.Sql2o;
 
 import java.net.MalformedURLException;
-
+import com.fasterxml.jackson.databind.ObjectMapper;
 import static spark.Spark.*;
 import static spark.Spark.get;
 
 
 public class Main {
 
-
+    private static ObjectMapper mapper=new ObjectMapper();
     public static void main(String[] args) throws MalformedURLException {
         String portNumber = System.getenv("PORT");
         port(portNumber != null ? Integer.valueOf(portNumber) : 8080);
-        String connURL = System.getenv("POSTGRES_URL") != null ?
-                System.getenv("POSTGRES_URL") :
-                "postgres://lunyerbx:gmy54jURFJW8m9AQKSUgA8khciCQhJjf@tantor.db.elephantsql.com:5432/lunyerbx";
+        String connURL = System.getenv("POSTGRES_URL") ;
 
         ConnectionDetails connection = new ConnectionDetails(connURL);
         System.out.println("Connection details="+connection.toString());
 
-        Sql2o sql2o = new Sql2o(connection.getUrl(), connection.getUsername(), connection.getPass());
+        Sql2o sql2o = new Sql2o(connection.getUrl());
 
         Sql2oModel model = new Sql2oModel(sql2o);
 
@@ -29,7 +27,7 @@ public class Main {
             response.status(200);
             response.type("application/json");
             return model.getAllProducts();
-        }, new JsonTransformer());
+        },mapper.writeValueAsString(model));
         System.out.println("READY");
         awaitInitialization();
     }
