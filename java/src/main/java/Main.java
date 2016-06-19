@@ -26,8 +26,8 @@ public class Main {
         get("/products", (request, response) -> {
             response.status(200);
             response.type("application/json");
-            return model.getAllProducts();
-        },mapper.writeValueAsString(model));
+            return mapper.writeValueAsString(model.getAllProducts());
+        });
         System.out.println("READY");
         awaitInitialization();
     }
